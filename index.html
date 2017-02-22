@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Exercice 5</title>
+  </head>
+  <body>
+    <div class="conteneur">
+      <img src="img/image1.jpg" id="image1" />
+      <img src="img/image2.jpg" id="image2" />
+      <img src="img/image3.jpg" id="image3" />
+      <img src="img/image4.jpg" id="image4" />
+      <img src="img/image5.jpg" id="image5" />
+    </div>
+    <script>
+    /*Enoncé de l'ex: Dans le fichier HTML fourni, faire comme dans l'exercice 1 mais avec 5 images.
+Bonus Ne faire qu'une seule fonction JavaScript pour cet exercice.*/
+
+var img1 = document.getElementById("image1");  // declare ma variable avec mon img1
+img1.addEventListener("mouseover", function(){  // j'ajoute mon évènment et je déclare ma fction
+  img1.src = "img/image1_2.jpg";              // je dis a ma fction que je veux changer la photo
+});
+var img2 = document.getElementById("image2");
+img2.addEventListener("mouseover", function(){
+  img2.src = "img/image2_2.jpg";
+});
+var img3 = document.getElementById("image3");
+img3.addEventListener("mouseover", function(){
+  img3.src = "img/image3_2.jpg";
+});
+var img4 = document.getElementById("image4");
+img4.addEventListener("mouseover", function(){
+  img4.src = "img/image4_2.jpg";
+});
+var img5 = document.getElementById("image5");
+img5.addEventListener("mouseover",function(){
+  img5.src = "img/image5_2.jpg";
+});
+    </script>
+  </body>
+</html>
